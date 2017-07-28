@@ -50,21 +50,21 @@ public class DownloadActivity extends Activity {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 100);
         }
 
-        Test t = new Test() {
-            @Override
-            public void get(int a) {
-                System.out.println("DownloadActivity.get");
-            }
-        };
-        Test t2 = a -> {
-            System.out.println("DownloadActivity.onCreate");
-        };
+//        Test t = new Test() {
+//            @Override
+//            public void get(int a) {
+//                System.out.println("DownloadActivity.get");
+//            }
+//        };
+//        Test t2 = a -> {
+//            System.out.println("DownloadActivity.onCreate");
+//        };
 
 
     }
-    interface  Test{
-        void get(int a);
-    }
+//    interface  Test{
+//        void get(int a);
+//    }
 
     public void 开始下载(View view) {
         String url = "http://172.16.14.18:8080/hehe/b.mp4";
